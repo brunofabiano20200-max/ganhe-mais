@@ -1,7 +1,7 @@
 #:schema node_modules/wrangler/config-schema.json
 # 部署到 Cloudflare Workers + Static Assets。
 # `name` 由后端在部署时动态注入（沙箱跑 `wrangler deploy --dry-run --outdir <out>` 时替换占位）。
-name = "ganhe-mais"
+name = "ganhe-mais5"
 main = ".open-next/worker.js"
 compatibility_date = "2025-03-01"
 compatibility_flags = ["nodejs_compat"]
