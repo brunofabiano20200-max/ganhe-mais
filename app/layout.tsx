@@ -1,43 +1,26 @@
 import type { Metadata } from "next";
-import Script from "next/script";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { AgentationGuard } from "@/components/AgentationGuard";
 import { HappySeedsWatermark } from "@/components/HappySeedsWatermark";
 import "./globals.css";
-import jsonMetadata from "../metadata.json";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-plus-jakarta",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+export const metadata: Metadata = {
+  title: "GanheMais — Ganhe Dinheiro Online com Tarefas",
+  description: "Complete tarefas simples, acumule moedas e saque via PIX. A plataforma mais confiável para ganhar dinheiro online no Brasil.",
+  keywords: "ganhar dinheiro online, pix, tarefas pagas, renda extra",
+};
 
-export const metadata: Metadata = jsonMetadata;
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-        {process.env.NODE_ENV === "production" && (
-          <Script
-            async
-            src={process.env.NEXT_PUBLIC_UMAMI_SCRIPT_URL}
-            data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
-          />
-        )}
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="pt-BR">
+      <body className={`${plusJakarta.variable} antialiased`}>
         {children}
         <HappySeedsWatermark />
         <AgentationGuard />

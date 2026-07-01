@@ -1,5 +1,21 @@
 {
-  "title": "HappySeeds",
-  "description": "The future of building is here. HappySeeds uses an agentic layer to bridge the gap between intent and code. High-fidelity UI, zero friction. Grow what you feel today.",
-  "keywords": [ "HappySeeds", "VibeCoding", "AI Agents", "Software Engineering", "SaaS Builder", "UI-First Development" ]
+  "title": "GanheMais",
+  "description": "Complete tarefas simples, acumule moedas e saque via PIX. A plataforma mais confiável para ganhar dinheiro online no Brasil.",
+  "keywords": ["ganhar dinheiro online", "pix", "tarefas pagas", "renda extra", "ganhe moedas", "saque pix"],
+  "alternates": {
+    "canonical": "https://ganhe-mais.web.app"
+  },
+  "openGraph": {
+    "title": "GanheMais",
+    "description": "Complete tarefas simples, acumule moedas e saque via PIX. A plataforma mais confiável para ganhar dinheiro online no Brasil.",
+    "url": "https://ganhe-mais.web.app",
+    "siteName": "GanheMais",
+    "locale": "pt_BR",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary",
+    "title": "GanheMais",
+    "description": "Complete tarefas simples, acumule moedas e saque via PIX. A plataforma mais confiável para ganhar dinheiro online no Brasil."
+  }
 }
